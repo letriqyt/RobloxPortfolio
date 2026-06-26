@@ -762,17 +762,26 @@ h1 {
   display: block;
 }
 
+.discord-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
 .discord-preview span {
   color: rgba(234, 246, 255, 0.72);
   font-size: 0.9rem;
   font-weight: 700;
 }
 
+.discord-name span {
+  display: inline-block;
+}
+
 .status-dot {
   display: inline-block;
   width: 9px;
   height: 9px;
-  margin-right: 6px;
   background: #38bdf8;
   border-radius: 50%;
   box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.16);
