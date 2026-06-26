@@ -774,18 +774,6 @@ h1 {
   font-weight: 700;
 }
 
-.discord-name span {
-  display: inline-block;
-}
-
-.status-dot {
-  display: inline-block;
-  width: 9px;
-  height: 9px;
-  background: #38bdf8;
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.16);
-}
 
 .contact-form {
   display: grid;
