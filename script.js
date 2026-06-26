@@ -94,6 +94,7 @@ const siteContent = {
       year: "2026",
       url: "https://www.roblox.com/games/78003352287107/Anime-Pulse",
       placeId: "78003352287107",
+      image: "assets/anime-pulse-banner.png",
       stats: "Featured Roblox contribution",
       tags: ["Roblox", "Systems", "UI", "Units"],
     },
@@ -229,7 +230,7 @@ const renderContributions = () => {
         <article class="game-showcase-card">
           <a class="game-art" href="${item.url}" target="_blank" rel="noreferrer" aria-label="Open ${item.game} on Roblox" data-place-id="${item.placeId}">
             <span class="game-art-glow"></span>
-            <img class="game-thumbnail" alt="" data-game-thumbnail />
+            <img class="game-thumbnail" src="${item.image || ""}" alt="" data-game-thumbnail />
             <span class="game-art-title">${item.game}</span>
             <span class="game-art-meta">${item.stats}</span>
           </a>
@@ -284,6 +285,11 @@ const hydrateRobloxThumbnails = async () => {
       const placeId = card.dataset.placeId;
       const image = card.querySelector("[data-game-thumbnail]");
       if (!placeId || !image) return;
+      if (image.getAttribute("src")) {
+        image.hidden = false;
+        card.classList.add("has-thumbnail");
+        return;
+      }
 
       try {
         const response = await fetch(
