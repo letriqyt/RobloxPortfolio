@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roblox Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Roblox developer portfolio showcasing scripting, systems, UI, game contributions, pricing, availability, and contact details."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Roblox developer portfolio home">
+        <span class="brand-mark" aria-hidden="true">L</span>
+        <span class="brand-text">Letriq</span>
+      </a>
+      <button class="menu-button" type="button" data-menu-button aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" data-nav>
+        <a href="#work">Past Works</a>
+        <a href="#contributions">Contributions</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#availability">Availability</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <img class="hero-image" src="assets/hero-roblox-dev.png" alt="" />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Letriq / Roblox developer</p>
+          <h1>Roblox Systems, Gameplay, and Polish Built With Intent.</h1>
+          <p class="hero-copy">
+            I build the kind of Roblox features that make an experience feel sharper: clean systems,
+            readable gameplay, responsive UI, and reliable launch support for creators and teams.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work">View Work</a>
+            <a class="button secondary" href="#contact">Start a Project</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-band" aria-label="Capability highlights">
+        <div class="stat">
+          <strong data-stat-projects>12+</strong>
+          <span>Completed Systems</span>
+        </div>
+        <div class="stat">
+          <strong data-stat-years>3+</strong>
+          <span>Years Building</span>
+        </div>
+        <div class="stat">
+          <strong data-stat-specialties>6</strong>
+          <span>Core Specialties</span>
+        </div>
+        <div class="stat">
+          <strong data-stat-response>24h</strong>
+          <span>Typical Reply</span>
+        </div>
+      </section>
+
+      <section class="section intro-section" id="capabilities">
+        <div class="section-heading">
+          <p class="eyebrow">What You Can Hire Me For</p>
+          <h2>Clean development across the systems players actually notice.</h2>
+        </div>
+        <div class="capability-grid" data-capabilities></div>
+      </section>
+
+      <section class="section work-section" id="work">
+        <div class="section-heading">
+          <p class="eyebrow">Past Works</p>
+          <h2>Featured builds with room for YouTube clips.</h2>
+        </div>
+        <div class="work-grid" data-work-grid></div>
+      </section>
+
+      <section class="section contribution-section" id="contributions">
+        <div class="section-heading">
+          <p class="eyebrow">Games Contributed To</p>
+          <h2>Featured Roblox experience contribution.</h2>
+        </div>
+        <div class="contribution-list" data-contribution-list></div>
+      </section>
+
+      <section class="section pricing-section" id="pricing">
+        <div class="section-heading">
+          <p class="eyebrow">Pricing</p>
+          <h2>Clear starting points for different project sizes.</h2>
+        </div>
+        <div class="pricing-grid" data-pricing-grid></div>
+      </section>
+
+      <section class="availability-band" id="availability">
+        <div>
+          <p class="eyebrow">Availability</p>
+          <h2 data-availability-title>Open for new Roblox commissions.</h2>
+          <p data-availability-copy>
+            Currently taking on short systems work, gameplay polish, and selected larger projects.
+          </p>
+        </div>
+        <div class="availability-card">
+          <span class="availability-dot"></span>
+          <strong data-availability-status>Available this month</strong>
+          <span data-availability-detail>Best for 1-3 week scopes</span>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact Me</p>
+          <h2>Send the brief, links, and what you want built.</h2>
+          <p>
+            Share the game link, the system you need, your deadline, and any references. Discord is the
+            fastest way to reach me for Roblox development inquiries.
+          </p>
+          <div class="contact-methods">
+            <a href="mailto:your.email@example.com" data-email-link>your.email@example.com</a>
+            <a href="https://www.roblox.com/" target="_blank" rel="noreferrer" data-roblox-link>Roblox Profile</a>
+            <a href="https://discord.com/" target="_blank" rel="noreferrer" data-discord-link>Discord</a>
+          </div>
+          <div class="discord-preview" aria-label="Discord preview">
+            <img class="discord-avatar" src="assets/discord-avatar.png" alt="notletriq avatar" data-discord-avatar />
+            <div>
+              <strong data-discord-name>notletriq</strong>
+              <span><span class="status-dot"></span> Online for inquiries</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" data-contact-form>
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
+          <label>
+            Email or Discord
+            <input type="text" name="contact" autocomplete="email" required />
+          </label>
+          <label>
+            Project Type
+            <select name="projectType">
+              <option>Gameplay system</option>
+              <option>UI / UX implementation</option>
+              <option>Game polish</option>
+              <option>Full prototype</option>
+              <option>Other Roblox development</option>
+            </select>
+          </label>
+          <label>
+            Brief
+            <textarea name="brief" rows="5" required></textarea>
+          </label>
+          <button class="button primary form-submit" type="submit">Send Inquiry</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span data-current-year></span> <span data-footer-name>Letriq</span>. Roblox Developer.</span>
+      <a href="#home">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
