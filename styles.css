@@ -830,6 +830,50 @@ h1 {
   font-weight: 800;
 }
 
+.thanks-page {
+  min-height: 100svh;
+  color: #ffffff;
+  background:
+    linear-gradient(135deg, rgba(4, 14, 28, 0.92), rgba(8, 47, 73, 0.88)),
+    url("assets/hero-roblox-dev.png") center / cover;
+}
+
+.thanks-screen {
+  display: grid;
+  min-height: 100svh;
+  align-content: center;
+  gap: 34px;
+  width: min(760px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+.thanks-brand {
+  width: fit-content;
+}
+
+.thanks-panel {
+  display: grid;
+  gap: 18px;
+}
+
+.thanks-panel h1 {
+  font-size: clamp(3rem, 9vw, 6.5rem);
+}
+
+.thanks-panel p:not(.eyebrow) {
+  max-width: 620px;
+  margin: 0;
+  color: rgba(234, 246, 255, 0.78);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.thanks-panel .button {
+  width: fit-content;
+  margin-top: 10px;
+}
+
 @media (max-width: 900px) {
   .menu-button {
     display: block;

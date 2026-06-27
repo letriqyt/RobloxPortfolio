@@ -1,6 +1,6 @@
 const siteContent = {
   name: "Letriq",
-  email: "your.email@example.com",
+  email: "letriqYT@gmail.com",
   discord: "notletriq",
   discordUrl: "https://discord.com/",
   discordAvatar: "assets/discord-avatar.png",
@@ -311,6 +311,8 @@ const hydrateRobloxThumbnails = async () => {
 
 const wireContactForm = () => {
   const form = document.querySelector("[data-contact-form]");
+  if (!form || form.action.includes("formsubmit.co")) return;
+
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     const data = new FormData(form);
